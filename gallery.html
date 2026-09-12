@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visual Gallery | Tishu Green Planet - Plants, Nurseries &amp; Spaces</title>
+  <meta name="description" content="Explore our high-resolution photo gallery showcasing nursery tours, exotic indoor plants, modern architecture, real estate plots, and community tree plantation drives.">
+  <meta name="keywords" content="plants photo gallery, nursery photos Delhi, green interior design ideas, terrace garden pictures, real estate plots images">
+  <meta name="author" content="Tishu Green Planet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Informational Bar -->
+  <div class="topbar">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center gap-3">
+          <span><i class="fas fa-seedling text-success me-1"></i> Social &amp; Environment Activist Platform</span>
+          <span class="d-none d-md-inline topbar-badge"><i class="fas fa-users me-1"></i> 70K+ Combined Social Followers</span>
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <a href="https://www.instagram.com/tishugreenplanet" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> 34.6K</a>
+          <a href="https://www.youtube.com/tishugreenplanet" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i> 35.4K</a>
+          <a href="contact.html" class="d-none d-sm-inline"><i class="fas fa-map-marker-alt me-1"></i> Delhi NCR, India</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="assets/images/logo.svg" alt="Tishu Green Planet Logo" class="navbar-brand-logo">
+        </a>
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars fs-3 text-dark"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMain">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="plants-nursery.html">Nursery Tours</a></li>
+            <li class="nav-item"><a class="nav-link" href="videos.html">Videos</a></li>
+            <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="testimonials.html">Reviews</a></li>
+            <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-2">
+            <a href="https://wa.me/919876543210?text=Hi%20Tishu%20Green%20Planet,%20I'm%20viewing%20your%20gallery!" target="_blank" rel="noopener noreferrer" class="btn-custom btn-whatsapp-custom nav-cta-btn">
+              <i class="fab fa-whatsapp"></i> Chat Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="py-5 bg-light-mint border-bottom">
+    <div class="container py-4 text-center">
+      <span class="section-badge"><i class="fas fa-camera me-1"></i> Visual Journey</span>
+      <h1 class="display-5 fw-bold text-dark mb-3">Our Real Photography Gallery</h1>
+      <p class="lead text-muted mx-auto" style="max-width: 720px;">
+        Curated real-life captures of thriving nurseries, botanical gems, community plantation events, and elegant sustainable spaces.
+      </p>
+    </div>
+  </section>
+
+  <!-- Filterable Gallery Section -->
+  <section class="section-padding bg-white">
+    <div class="container">
+      <!-- Filter Navigation -->
+      <div class="gallery-filter-nav reveal-fade-up">
+        <button class="gallery-filter-btn active" data-filter="all">All Real Captures</button>
+        <button class="gallery-filter-btn" data-filter="nursery">Nursery Tours</button>
+        <button class="gallery-filter-btn" data-filter="plants">Exotic Plants</button>
+        <button class="gallery-filter-btn" data-filter="interior">Interior Greens</button>
+        <button class="gallery-filter-btn" data-filter="architecture">Architecture &amp; Plots</button>
+        <button class="gallery-filter-btn" data-filter="community">Community Drives</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="row g-4" id="galleryContainer">
+        <!-- Item 1: Nursery -->
+        <div class="col-md-6 col-lg-4 gallery-item reveal-fade-up" data-category="nursery" data-caption="Sprawling greenhouse foliage at our featured nursery tour in Delhi NCR." data-full-img="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=1200&q=85">
+          <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=800&q=80" alt="Greenhouse nursery tour showcase">
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-category">Nursery Tours</span>
+            <h5 class="gallery-item-title">Greenhouse Nursery Tour</h5>
+          </div>
+        </div>
+
+        <!-- Item 2: Plants -->
+        <div class="col-md-6 col-lg-4 gallery-item reveal-fade-up" data-category="plants" data-caption="Thriving Monstera Deliciosa showing broad fenestrations and vigorous aerial roots." data-full-img="https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&w=1200&q=85">
+          <img src="https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&w=800&q=80" alt="Exotic Monstera Deliciosa">
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-category">Exotic Plants</span>
+            <h5 class="gallery-item-title">Monstera Deliciosa Foliage</h5>
+          </div>
+        </div>
+
+        <!-- Item 3: Interior -->
+        <div class="col-md-6 col-lg-4 gallery-item reveal-fade-up" data-category="interior" data-caption="Biophilic living room styling with natural sunlit fiddle leaf fig and indoor plants." data-full-img="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=85">
+          <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" alt="Interior green living space">
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-category">Interior Greens</span>
+            <h5 class="gallery-item-title">Modern Biophilic Living Room</h5>
+          </div>
+        </div>
+
+        <!-- Item 4: Architecture -->
+        <div class="col-md-6 col-lg-4 gallery-item reveal-fade-up" data-category="architecture" data-caption="Contemporary residential building featuring expansive green balconies and natural ventilation." data-full-img="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=85">
+          <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80" alt="Residential building with green balconies">
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-category">Architecture &amp; Plots</span>
+            <h5 class="gallery-item-title">Residential Apartments &amp; Flats</h5>
+          </div>
+        </div>
+
+        <!-- Item 5: Community -->
+        <div class="col-md-6 col-lg-4 gallery-item reveal-fade-up" data-category="community" data-caption="Independence Day 1500+ Free Plant Distribution Drive in Balinagar, Delhi." data-full-img="https://images.unsplash.com/photo-1576085898323-218337e3e43c?auto=format&fit=crop&w=1200&q=85">
+          <img src="https://images.unsplash.com/photo-1576085898323-218337e3e43c?auto=format&fit=crop&w=800&q=80" alt="Community plant distribution drive in Delhi">
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-category">Community Drives</span>
+            <h5 class="gallery-item-title">1,500+ Free Saplings Drive</h5>
+          </div>
+        </div>
+
+        <!-- Item 6: Nursery -->
+        <div class="col-md-6 col-lg-4 gallery-item reveal-fade-up" data-category="nursery" data-caption="Avenue of mature bonsais and bougainvillea at Harsh Nursery Delhi." data-full-img="https://images.unsplash.com/photo-1592150621744-aca64f48394a?auto=format&fit=crop&w=1200&q=85">
+          <img src="https://images.unsplash.com/photo-1592150621744-aca64f48394a?auto=format&fit=crop&w=800&q=80" alt="Harsh Nursery bonsai and flowering plants">
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-category">Nursery Tours</span>
+            <h5 class="gallery-item-title">Bonsai &amp; Floral Pavilion</h5>
+          </div>
+        </div>
+
+        <!-- Item 7: Architecture / Plots -->
+        <div class="col-md-6 col-lg-4 gallery-item reveal-fade-up" data-category="architecture" data-caption="Sprawling green land parcel and open plots ready for residential or farmhouse construction." data-full-img="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=85">
+          <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80" alt="Green open land plots">
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-category">Architecture &amp; Plots</span>
+            <h5 class="gallery-item-title">Open Green Plots &amp; Farmland</h5>
+          </div>
+        </div>
+
+        <!-- Item 8: Interior -->
+        <div class="col-md-6 col-lg-4 gallery-item reveal-fade-up" data-category="interior" data-caption="Terrace garden makeover with turf, privacy planters, and flowering shrubs." data-full-img="https://images.unsplash.com/photo-1558904541-efa8c4a08931?auto=format&fit=crop&w=1200&q=85">
+          <img src="https://images.unsplash.com/photo-1558904541-efa8c4a08931?auto=format&fit=crop&w=800&q=80" alt="Terrace garden outdoor living">
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-category">Interior Greens</span>
+            <h5 class="gallery-item-title">Terrace Garden Transformation</h5>
+          </div>
+        </div>
+
+        <!-- Item 9: Plants -->
+        <div class="col-md-6 col-lg-4 gallery-item reveal-fade-up" data-category="plants" data-caption="Healthy Snake Plants (Sansevieria trifasciata) - zero maintenance NASA air-purifiers." data-full-img="https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=1200&q=85">
+          <img src="https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=800&q=80" alt="Healthy indoor snake plants">
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-category">Exotic Plants</span>
+            <h5 class="gallery-item-title">Air Purifying Sansevieria</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close Lightbox">&times;</button>
+    <div class="lightbox-content">
+      <img src="" alt="Enlarged view" class="lightbox-img" id="lightboxImg">
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp & Back to Top -->
+  <a href="https://wa.me/919876543210?text=Hello%20Tishu%20Green%20Planet,%20I'm%20impressed%20by%20your%20gallery!" target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">Chat with us directly</span>
+  </a>
+
+  <button type="button" class="back-to-top" id="backToTopBtn" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <img src="assets/images/logo.svg" alt="Tishu Green Planet" class="footer-brand-logo">
+          <p class="footer-about-text">
+            Tishu Green Planet is a Social &amp; Environment Activist platform dedicated to inspiring plant love, featuring nurseries across India, and offering a one-stop consultancy for buildings, plots, flats, and interior &amp; exterior green spaces.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://www.instagram.com/tishugreenplanet" target="_blank" rel="noopener noreferrer" class="footer-social-btn"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/tishugreenplanet" target="_blank" rel="noopener noreferrer" class="footer-social-btn"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.threads.net/@tishugreenplanet" target="_blank" rel="noopener noreferrer" class="footer-social-btn"><i class="fas fa-at"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="footer-social-btn"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h4 class="footer-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> Services</a></li>
+            <li><a href="plants-nursery.html"><i class="fas fa-chevron-right"></i> Nursery Tours</a></li>
+            <li><a href="videos.html"><i class="fas fa-chevron-right"></i> Videos</a></li>
+            <li><a href="gallery.html"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-6">
+          <h4 class="footer-title">Our Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#buildings"><i class="fas fa-chevron-right"></i> Buildings &amp; Commercial</a></li>
+            <li><a href="services.html#plots"><i class="fas fa-chevron-right"></i> Plots &amp; Land Parcels</a></li>
+            <li><a href="services.html#flats"><i class="fas fa-chevron-right"></i> Residential Flats</a></li>
+            <li><a href="services.html#interior"><i class="fas fa-chevron-right"></i> Interior Living Walls</a></li>
+            <li><a href="services.html#exterior"><i class="fas fa-chevron-right"></i> Terrace &amp; Landscape</a></li>
+            <li><a href="plants-nursery.html"><i class="fas fa-chevron-right"></i> Nursery Promotions</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-title">Delhi NCR Office</h4>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Delhi NCR, India (Coverage across Ramesh Nagar, Balinagar, and surrounding areas)</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fab fa-whatsapp"></i>
+            <span><a href="https://wa.me/919876543210">+91 98765 43210</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope"></i>
+            <span><a href="mailto:contact@tishugreenplanet.com">contact@tishugreenplanet.com</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-clock"></i>
+            <span>Mon - Sat: 9:30 AM - 7:00 PM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center">
+        <div>
+          &copy; <span class="current-year">2026</span> <strong>Tishu Green Planet</strong>. All rights reserved.
+        </div>
+        <div class="d-flex gap-3 mt-2 mt-sm-0">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <span>•</span>
+          <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+          <span>•</span>
+          <a href="sitemap.xml">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom Scripts -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/validation.js"></script>
+</body>
+</html>

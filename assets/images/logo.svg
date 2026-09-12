@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 110" width="100%" height="100%">
+  <defs>
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#52b788"/>
+      <stop offset="100%" stop-color="#1b4332"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd166"/>
+      <stop offset="100%" stop-color="#c99738"/>
+    </linearGradient>
+    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#2d6a4f" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Brand Emblem (Planet + Leaves) -->
+  <g transform="translate(10, 5)" filter="url(#subtleGlow)">
+    <circle cx="50" cy="50" r="44" fill="#ffffff" stroke="#2d6a4f" stroke-width="3.5"/>
+    <circle cx="50" cy="50" r="38" fill="#e8f5e9" opacity="0.6"/>
+    
+    <path d="M 50 16 C 26 28 20 62 50 82 C 80 62 74 28 50 16 Z" fill="url(#leafGrad)"/>
+    <path d="M 50 82 C 40 68 40 45 50 32 C 60 45 60 68 50 82 Z" fill="#74c69d"/>
+    <line x1="50" y1="32" x2="50" y2="82" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+    
+    <circle cx="68" cy="30" r="6.5" fill="url(#accentGrad)"/>
+    <circle cx="32" cy="70" r="3.5" fill="#40916c"/>
+  </g>
+
+  <!-- Typography -->
+  <g transform="translate(118, 0)">
+    <text x="0" y="48" font-family="'Plus Jakarta Sans', 'Montserrat', 'Inter', sans-serif" font-weight="900" font-size="36" fill="#1b4332" letter-spacing="1.5">TISHU</text>
+    <text x="135" y="48" font-family="'Plus Jakarta Sans', 'Montserrat', 'Inter', sans-serif" font-weight="700" font-size="36" fill="#2d6a4f" letter-spacing="1">GREEN PLANET</text>
+    <text x="2" y="74" font-family="'Inter', sans-serif" font-weight="600" font-size="12" fill="#52796f" letter-spacing="2.2" text-transform="uppercase">PLANTS • REAL ESTATE • INTERIOR &amp; EXTERIOR</text>
+    <rect x="2" y="84" width="230" height="18" rx="9" fill="#e8f5e9"/>
+    <circle cx="10" cy="93" r="3" fill="#2d6a4f"/>
+    <text x="18" y="96" font-family="'Inter', sans-serif" font-weight="600" font-size="9.5" fill="#1b4332" letter-spacing="0.5">35K+ Community • Green Living Activist</text>
+  </g>
+</svg>
